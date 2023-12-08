@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="hr">
+<head>
+    <meta charset="UTF-8" />
+    <title>Rad s Poljem</title>
+</head>
+<body>
+    <script type="text/javascript">
+        function generirajSlucajneBrojeve(min, max) {
+		for (var i = 0; i < 5; i++) {
+			var randomBroj = Math.floor(Math.random() * (max - min + 1)) + min;
+			console.log(randomBroj);
+		}
+		}
+
+	// Primjer korištenja funkcije
+	generirajSlucajneBrojeve(10, 50);
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="hr">
+<head>
+    <meta charset="UTF-8" />
+    <title>Rad s Poljem</title>
+</head>
+<body>
+    <script type="text/javascript">
+        var polje = new Array(1, 2, 3, 4, 7, 8, 5, 6, 9, 55, 12, 4, 85);
+		document.write("a. Inicijalna dužina polja: " + polje.length + "<br>");
+
+		polje.sort((a, b) => b - a);
+		document.write("b. Sortirano polje od najvećeg ka najmanjem: " + polje.join(", ") + "<br>");
+
+		polje.sort((a, b) => a - b);
+		document.write("c. Sortirano polje od najmanjeg ka najvećem: " + polje.join(", ") + "<br>");
+
+		polje.pop();	
+		document.write("d. Sortirano polje bez zadnjeg člana: " + polje.join(", ") + "<br>");
+
+		polje.push(19, 22);
+		document.write("e. Sortirano polje s dodanim članovima: " + polje.join(", ") + "<br>");
+
+		var polje2 = ["Banana", "Orange", "Apple", "Mango"];
+
+		var kraj = polje.concat(polje2);
+
+		document.write("f. Polje nakon spajanja: " + kraj.join(", ") + "<br>");
+
+    </script>
+</body>
+</html>

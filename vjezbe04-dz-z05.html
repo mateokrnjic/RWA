@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="hr">
+<head>
+    <meta charset="UTF-8" />
+    <title>Rad s Poljem</title>
+</head>
+<body>
+    <script type="text/javascript">
+        // Kreiranje objekata
+        var osoba1 = {
+            firstName: "Marko",
+            lastName: "Maric",
+            age: 40,
+            eyeColor: "black"
+        };
+
+        var osoba2 = {
+            firstName: "Ana",
+            lastName: "Anić",
+            age: 25,
+            eyeColor: "brown"
+        };
+
+        var osoba3 = {
+            firstName: "Ivan",
+            lastName: "Ivić",
+            age: 35,
+            eyeColor: "blue"
+        };
+
+        var osoba4 = {
+            firstName: "Petra",
+            lastName: "Perić",
+            age: 28,
+            eyeColor: "green"
+        };
+
+        var osoba5 = {
+            firstName: "Tomislav",
+            lastName: "Tomljanović",
+            age: 32,
+            eyeColor: "hazel"
+        };
+
+        // Polje objekata
+        var osobe = [osoba1, osoba2, osoba3, osoba4, osoba5];
+
+        // Petlja za ispis indeksa i vrijednosti objekata
+        for (var i = 0; i < osobe.length; i++) {
+            var trenutnaOsoba = osobe[i];
+            document.write("Ime: " + trenutnaOsoba.firstName + "<br>");
+            document.write("Prezime: " + trenutnaOsoba.lastName + "<br>");
+            document.write("Dob: " + trenutnaOsoba.age + "<br>");
+            document.write("Boja očiju: " + trenutnaOsoba.eyeColor + "<br>" );
+            document.write("--------------------------" + "<br>");
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="hr">
+<head>
+    <meta charset="UTF-8" />
+    <title>Rad s Poljem</title>
+</head>
+<body>
+    <script type="text/javascript">
+        function jeSavrsenBroj(broj) {
+            var savrseniBrojevi = [];
+
+            for (var i = 1; i <= broj; i++) {
+                var sum = 0;
+
+                for (var j = 1; j < i; j++) {
+                    if (i % j === 0) {
+                        sum += j;
+                    }
+                }
+
+                if (sum === i) {
+                    savrseniBrojevi.push(i);
+                }
+            }
+
+            console.log("Savršeni brojevi od 1 do " + broj + " su: " + savrseniBrojevi.join(", "));
+        }
+
+        // Primjer korištenja funkcije
+        jeSavrsenBroj(10000);
+    </script>
+</body>
+</html>

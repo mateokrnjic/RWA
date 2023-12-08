@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="hr">
+<head>
+    <meta charset="UTF-8" />
+    <title>Rad s Poljem</title>
+</head>
+<body>
+    <script type="text/javascript">
+        function filtrirajVelikaSlova(arr) {
+            var filtriranoPolje = [];
+
+            for (var i = 0; i < arr.length; i++) {
+                var trenutnaVrijednost = arr[i];
+
+                if (trenutnaVrijednost === trenutnaVrijednost.toUpperCase() || trenutnaVrijednost.length >= 5) {
+                    filtriranoPolje.push(trenutnaVrijednost);
+                }
+            }
+
+            return filtriranoPolje;
+        }
+
+        var arr = ['Ovo', 'je', 'My', 'prvi', 'komad', 'OF', 'JAVASCRIPT', 'koda', 'Koji', 'je', 'proradio'];
+        var filtrirano = filtrirajVelikaSlova(arr);
+
+        console.log(filtrirano);
+    </script>
+</body>
+</html>

@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="hr">
+<head>
+    <meta charset="UTF-8" />
+    <title>Rad s Poljem</title>
+</head>
+<body>
+    <script type="text/javascript">
+        var kvadratFunkcija = function(x) {
+            if (typeof x === 'number') {
+                return x * x;
+            } else {
+                return "Obavijest o pogrešci: Proslijedite broj.";
+            }
+        };
+
+        var rezultat1 = kvadratFunkcija(5);
+        var rezultat2 = kvadratFunkcija("nebroj");
+
+        console.log(rezultat1);
+        console.log(rezultat2);
+    </script>
+</body>
+</html>
